@@ -61,9 +61,11 @@ class Landing extends Component {
           </p>
         </section>
         <section>
-          <RegisterForm />
+          <button>Register Now</button>
         </section>
       </div>
     );
   }
 }
+
+export default Landing;

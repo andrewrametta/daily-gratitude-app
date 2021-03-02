@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class Register extends Component {
+class LoginForm extends Component {
   render() {
     return (
       <div>
         <section>
           <header>
-            <h3>Register Now</h3>
+            <h3>Login</h3>
           </header>
-          <form className="register-form">
+          <form className="Login-form">
             <div>
               <label htmlFor="username">Email</label>
               <input type="text" name="username" id="username" />
@@ -17,7 +17,7 @@ class Register extends Component {
               <label htmlFor="password">Password</label>
               <input type="password" name="password" id="password" />
             </div>
-            <button type="submit">Register</button>
+            <button type="submit">Login</button>
           </form>
         </section>
       </div>
@@ -25,4 +25,4 @@ class Register extends Component {
   }
 }
 
-export default Register;
+export default LoginForm;
