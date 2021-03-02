@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import Landing from "./components/Landing/Landing";
 import Register from "./components/RegisterForm/RegisterForm";
 import Login from "./components/Login/Login";
+import About from "./components/About/About";
 
 class App extends Component {
   /*renderMainRoutes() {
@@ -24,6 +25,7 @@ class App extends Component {
         <Route exact path="/" component={Landing} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
+        <Route path="/about" component={About} />
       </div>
     );
   }
