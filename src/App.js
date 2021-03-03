@@ -25,12 +25,14 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <Route exact path="/" component={Landing} />
-        <Route path="/register" component={Register} />
-        <Route path="/login" component={Login} />
-        <Route path="/about" component={About} />
-        <Route path="/user" component={User} />
-        <Route path="/new-day" component={NewDay} />
+        <main>
+          <Route exact path="/" component={Landing} />
+          <Route path="/register" component={Register} />
+          <Route path="/login" component={Login} />
+          <Route path="/about" component={About} />
+          <Route path="/user" component={User} />
+          <Route path="/new-day" component={NewDay} />
+        </main>
       </div>
     );
   }
