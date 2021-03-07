@@ -24,6 +24,9 @@ class Navbar extends Component {
                 </NavLink>
               </li>
             );
+            //add about here, currently this is set up to show all routes
+            //change this to show about always, and everything else should be good
+            // may decide to get rid of about and just have landing and about be one page that has a link of Daily Gratitude
           })}
           {TokenService.hasAuthToken() ? (
             <>

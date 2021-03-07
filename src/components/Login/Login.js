@@ -1,6 +1,28 @@
 import React, { Component } from "react";
+import TokenService from "../../services/token-service";
+import config from "../../config";
 
 class LoginForm extends Component {
+  handleLogin = (e) => {
+    e.preventDefault();
+    const { username, password } = e.target;
+    const newUser = { username: username.value, password: password.value };
+    /*fetch(`${config.API_ENDPOINT}/api/auth/login`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newUser),
+    })
+      .then((res) => res.json())
+      .then((loginResponse) => {
+        TokenService.saveAuthToken(loginResponse.authToken);
+        this.props.history.push("/user");
+      })
+      .catch((err) => console.error(err));*/
+  };
+
   render() {
     return (
       <div>
@@ -8,9 +30,9 @@ class LoginForm extends Component {
           <header>
             <h3>Login</h3>
           </header>
-          <form className="Login-form">
+          <form className="Login-form" onSubmit={this.handleLogin}>
             <div>
-              <label htmlFor="username">Email</label>
+              <label htmlFor="username">Username</label>
               <input type="text" name="username" id="username" />
             </div>
             <div>
