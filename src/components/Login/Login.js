@@ -21,6 +21,8 @@ class LoginForm extends Component {
         this.props.history.push("/user");
       })
       .catch((err) => console.error(err));*/
+    TokenService.saveAuthToken("shajksd798dsahbHJhs8");
+    this.props.history.push("/user");
   };
 
   render() {
@@ -33,11 +35,21 @@ class LoginForm extends Component {
           <form className="Login-form" onSubmit={this.handleLogin}>
             <div>
               <label htmlFor="username">Username</label>
-              <input type="text" name="username" id="username" />
+              <input
+                type="text"
+                name="username"
+                id="username"
+                value="demoUser"
+              />
             </div>
             <div>
               <label htmlFor="password">Password</label>
-              <input type="password" name="password" id="password" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                value="P@ssword1234"
+              />
             </div>
             <button type="submit">Login</button>
           </form>

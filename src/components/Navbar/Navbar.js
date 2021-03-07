@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
 import { Link, NavLink } from "react-router-dom";
+import TokenService from "../../services/token-service";
 import "./Navbar.css";
 
-const TokenService = {
-  hasAuthToken: () => false,
-};
-
 class Navbar extends Component {
+  logout = () => {
+    TokenService.clearAuthToken();
+    this.props.history.push("/");
+  };
+
   render() {
     return (
       <nav className="NavbarItems">
@@ -37,7 +39,9 @@ class Navbar extends Component {
                 <Link to="/new-day">New Day</Link>
               </li>
               <li>
-                <Link to="/logout">Logout</Link>
+                <Link to="/" onClick={this.logout}>
+                  Logout
+                </Link>
               </li>
             </>
           ) : (
