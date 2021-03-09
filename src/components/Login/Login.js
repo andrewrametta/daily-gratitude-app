@@ -1,28 +1,17 @@
 import React, { Component } from "react";
 import TokenService from "../../services/token-service";
+import AuthAPIService from "../../services/auth-api-service";
 import config from "../../config";
 
 class LoginForm extends Component {
   handleLogin = (e) => {
     e.preventDefault();
     const { username, password } = e.target;
-    const newUser = { username: username.value, password: password.value };
-    /*fetch(`${config.API_ENDPOINT}/api/auth/login`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newUser),
-    })
-      .then((res) => res.json())
-      .then((loginResponse) => {
-        TokenService.saveAuthToken(loginResponse.authToken);
-        this.props.history.push("/user");
-      })
-      .catch((err) => console.error(err));*/
-    TokenService.saveAuthToken("shajksd798dsahbHJhs8");
-    this.props.history.push("/user");
+    const user = { username: username.value, password: password.value };
+    AuthAPIService.loginUser(user).then((loginResponse) => {
+      TokenService.saveAuthToken(loginResponse.authToken);
+      this.props.history.push("/user");
+    });
   };
 
   render() {
