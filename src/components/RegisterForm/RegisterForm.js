@@ -8,11 +8,11 @@ class Register extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const { email, password, confirmPassword } = e.target;
+    const { username, password, confirmPassword } = e.target;
     this.setState({ error: null });
     AuthAPIService.postUser({
-      email: email.value,
       username: username.value,
+      password: password.value,
     })
       .then((user) => {
         this.props.history.push("/login");
@@ -32,15 +32,15 @@ class Register extends Component {
           <form className="register-form" onSubmit={this.handleSubmit}>
             {this.state.error && <p className="error">{this.state.error}</p>}
             <div>
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">Username </label>
               <input type="text" name="username" id="username" />
             </div>
             <div>
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Password </label>
               <input type="password" name="password" id="password" />
             </div>
             <div>
-              <label htmlFor="confirm-password">Confirm Password</label>
+              <label htmlFor="confirm-password">Confirm Password </label>
               <input
                 type="password"
                 name="confirmPassword"

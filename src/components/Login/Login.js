@@ -39,7 +39,7 @@ class LoginForm extends Component {
                 type="text"
                 name="username"
                 id="username"
-                value="demoUser"
+                defaultValue="demoUser"
               />
             </div>
             <div>
@@ -48,7 +48,7 @@ class LoginForm extends Component {
                 type="password"
                 name="password"
                 id="password"
-                value="P@ssword1234"
+                defaultValue="P@ssword1234"
               />
             </div>
             <button type="submit">Login</button>
