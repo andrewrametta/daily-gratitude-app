@@ -1,6 +1,27 @@
 import React, { Component } from "react";
+import AuthAPIService from "../../services/auth-api-service";
 
 class Register extends Component {
+  state = {
+    error: null,
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const { email, password, confirmPassword } = e.target;
+    this.setState({ error: null });
+    AuthAPIService.postUser({
+      email: email.value,
+      username: username.value,
+    })
+      .then((user) => {
+        this.props.history.push("/login");
+      })
+      .catch((res) => {
+        this.setState({ error: res.error });
+      });
+  };
+
   render() {
     return (
       <div>
@@ -8,7 +29,8 @@ class Register extends Component {
           <header>
             <h3>Register Now</h3>
           </header>
-          <form className="register-form">
+          <form className="register-form" onSubmit={this.handleSubmit}>
+            {this.state.error && <p className="error">{this.state.error}</p>}
             <div>
               <label htmlFor="username">Username</label>
               <input type="text" name="username" id="username" />
