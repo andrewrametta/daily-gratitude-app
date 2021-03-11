@@ -19,8 +19,8 @@ export default {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(user),
-    })
-      .then((res) => res.json())
-      .catch((err) => console.error(err));
+    }).then((res) =>
+      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
+    );
   },
 };
