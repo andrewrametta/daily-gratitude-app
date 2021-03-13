@@ -41,7 +41,6 @@ class NewDay extends Component {
               <label htmlFor="text3"></label>
               <textarea name="text3" rows="4" required></textarea>
               <button type="submit">Submit</button>
-              <button type="reset">Reset</button>
             </section>
           </form>
         </section>
