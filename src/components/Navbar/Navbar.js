@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { MenuItems } from "./MenuItems";
 import { Link, NavLink } from "react-router-dom";
 import TokenService from "../../services/token-service";
 import Context from "../../Context";
@@ -9,7 +8,6 @@ class Navbar extends Component {
   static contextType = Context;
 
   logout = () => {
-    this.context.emptyUser();
     TokenService.clearAuthToken();
     this.props.history.push("/");
   };
@@ -38,24 +36,30 @@ class Navbar extends Component {
           {TokenService.hasAuthToken() ? (
             <>
               <li>
-                <Link to="/user">User</Link>
+                <Link to="/dashboard">Dashboard</Link>
               </li>
               <li>
-                <Link to="/new-day">New Day</Link>
+                <NavLink className="navLinks" to="/new-day">
+                  New Day
+                </NavLink>
               </li>
               <li>
-                <Link to="/" onClick={this.logout}>
+                <NavLink className="navLinks" to="/" onClick={this.logout}>
                   Logout
-                </Link>
+                </NavLink>
               </li>
             </>
           ) : (
             <>
               <li>
-                <Link to="/register">Register</Link>
+                <NavLink className="navLinks" to="/register">
+                  Register
+                </NavLink>
               </li>
               <li>
-                <Link to="/login">Login</Link>
+                <NavLink className="navLinks" to="/login">
+                  Login
+                </NavLink>
               </li>
             </>
           )}

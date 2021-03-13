@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import AuthApiService from "../../services/auth-api-service";
+import Context from "../../Context";
 
 class NewDay extends Component {
+  static contextType = Context;
   handleSubmit = (e) => {
     e.preventDefault();
     const { text1, text2, text3 } = e.target;
@@ -12,7 +14,7 @@ class NewDay extends Component {
     })
       .then((day) => {
         this.context.addDay(day);
-        this.props.history.push("/user");
+        this.props.history.push("/dashboard");
       })
       .catch((res) => {
         this.setState({ error: res.error });
@@ -24,7 +26,11 @@ class NewDay extends Component {
     return (
       <div>
         <header>
-          <h3>Day 25</h3>
+          {this.context.days.length === 0 ? (
+            <h4>Day 1</h4>
+          ) : (
+            <h4>Day {this.context.days.length + 1}</h4>
+          )}
           <h5>Write 3 things you are grateful for in the text boxes below</h5>
         </header>
         <section>

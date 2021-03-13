@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import TokenService from "../../services/token-service";
 import AuthAPIService from "../../services/auth-api-service";
 import Context from "../../Context";
-import config from "../../config";
 
 class LoginForm extends Component {
   state = {
@@ -20,10 +19,10 @@ class LoginForm extends Component {
         TokenService.saveAuthToken(loginResponse.authToken);
         // fetch to the backend to /api/days with that authtoken
         // .then(res=>res.json()).then(days=>{this.context.setDays(days)); this.props.history.push("/user")});
-        this.props.history.push("/user");
+        this.props.history.push("/dashboard");
       })
       .catch((res) => {
-        this.setState({ error: res });
+        this.setState({ error: res.error });
       });
   };
 
@@ -42,8 +41,7 @@ class LoginForm extends Component {
                 type="text"
                 name="username"
                 id="username"
-                value={this.context.username}
-                onChange={(e) => this.context.setUsername(e)}
+                defaultValue="Username"
               />
             </div>
             <div>
