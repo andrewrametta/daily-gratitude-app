@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component renders the complete page 1`] = `
+<nav
+  className="NavbarItems"
+>
+  <h1
+    className="navbar-logo"
+  >
+    <Link
+      to="/"
+    >
+      Daily Gratitude
+    </Link>
+  </h1>
+  <div
+    className="meun-icon"
+  />
+  <ul>
+    <li>
+      <NavLink
+        className="navLinks"
+        to="/register"
+      >
+        Register
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        className="navLinks"
+        to="/login"
+      >
+        Login
+      </NavLink>
+    </li>
+  </ul>
+</nav>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component renders the complete page 1`] = `
+<div>
+  <section>
+    <header>
+      <h3>
+        Login
+      </h3>
+    </header>
+    <form
+      className="Login-form"
+      onSubmit={[Function]}
+    >
+      <div>
+        <label
+          htmlFor="username"
+        >
+          Username
+        </label>
+        <input
+          defaultValue="Username"
+          id="username"
+          name="username"
+          type="text"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="password"
+        >
+          Password
+        </label>
+        <input
+          defaultValue="P@ssword1234"
+          id="password"
+          name="password"
+          type="password"
+        />
+      </div>
+      <button
+        type="submit"
+      >
+        Login
+      </button>
+    </form>
+  </section>
+</div>
+`;

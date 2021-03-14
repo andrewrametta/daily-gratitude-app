@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard component renders the complete page 1`] = `
+<div>
+  <header>
+    <h3>
+      Welcome
+    </h3>
+  </header>
+  <section>
+    <h5>
+      Start your Gratitude Journal Today!
+    </h5>
+  </section>
+  <section>
+    <Link
+      to="/new-day"
+    >
+      Add your first day!
+    </Link>
+  </section>
+</div>
+`;

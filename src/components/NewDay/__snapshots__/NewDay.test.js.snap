@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewDay component renders the complete page 1`] = `
+<div>
+  <header>
+    <h4>
+      Day 1
+    </h4>
+    <h5>
+      Write 3 things you are grateful for in the text boxes below
+    </h5>
+  </header>
+  <section>
+    <form
+      id="new-day"
+      onSubmit={[Function]}
+    >
+      <section
+        className="form-section overview-section"
+      >
+        <label
+          htmlFor="text1"
+        />
+        <textarea
+          name="text1"
+          required={true}
+          rows="4"
+        />
+      </section>
+      <section
+        className="form-section overview-section"
+      >
+        <label
+          htmlFor="text2"
+        />
+        <textarea
+          name="text2"
+          required={true}
+          rows="4"
+        />
+      </section>
+      <section
+        className="form-section overview-section"
+      >
+        <label
+          htmlFor="text3"
+        />
+        <textarea
+          name="text3"
+          required={true}
+          rows="4"
+        />
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </section>
+    </form>
+  </section>
+</div>
+`;

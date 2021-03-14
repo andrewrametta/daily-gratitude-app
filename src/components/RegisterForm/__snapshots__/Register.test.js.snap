@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterForm component renders the complete page 1`] = `
+<div>
+  <section>
+    <header>
+      <h3>
+        Register Now
+      </h3>
+    </header>
+    <form
+      className="register-form"
+      onSubmit={[Function]}
+    >
+      <div>
+        <label
+          htmlFor="username"
+        >
+          Username 
+        </label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="password"
+        >
+          Password 
+        </label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="confirm-password"
+        >
+          Confirm Password 
+        </label>
+        <input
+          id="confirm-password"
+          name="confirmPassword"
+          type="password"
+        />
+      </div>
+      <button
+        type="submit"
+      >
+        Register
+      </button>
+    </form>
+  </section>
+</div>
+`;
