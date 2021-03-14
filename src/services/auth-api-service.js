@@ -1,9 +1,10 @@
 import config from "../config";
+import TokenService from "./token-service";
 
 export default {
   postUser(user) {
     return fetch(`${config.API_ENDPOINT}/api/users`, {
-      method: "post",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
@@ -13,10 +14,25 @@ export default {
     );
   },
   postDay(day) {
+    const token = "bearer " + TokenService.hasAuthToken();
     return fetch(`${config.API_ENDPOINT}/api/days`, {
-      method: "post",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: token,
+      },
+      body: JSON.stringify(day),
+    }).then((res) =>
+      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
+    );
+  },
+  getDay(day) {
+    const token = "bearer " + TokenService.hasAuthToken();
+    return fetch(`${config.API_ENDPOINT}/api/days`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token,
       },
       body: JSON.stringify(day),
     }).then((res) =>

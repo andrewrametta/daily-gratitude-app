@@ -13,7 +13,8 @@ class NewDay extends Component {
       text3: text3.value,
     })
       .then((day) => {
-        this.context.addDay(day);
+        console.log(day);
+        this.context.addNewDay(day);
         this.props.history.push("/dashboard");
       })
       .catch((res) => {
@@ -21,16 +22,12 @@ class NewDay extends Component {
       });
   };
 
-  // fetch post
   render() {
+    const { days = [] } = this.context;
     return (
       <div>
         <header>
-          {this.context.days.length === 0 ? (
-            <h4>Day 1</h4>
-          ) : (
-            <h4>Day {this.context.days.length + 1}</h4>
-          )}
+          {days.length === 0 ? <h4>Day 1</h4> : <h4>Day {days.length + 1}</h4>}
           <h5>Write 3 things you are grateful for in the text boxes below</h5>
         </header>
         <section>

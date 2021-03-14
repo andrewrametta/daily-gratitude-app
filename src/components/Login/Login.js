@@ -17,6 +17,9 @@ class LoginForm extends Component {
     AuthAPIService.loginUser(user)
       .then((loginResponse) => {
         TokenService.saveAuthToken(loginResponse.authToken);
+        AuthAPIService.getDay().then((days) => {
+          this.context.setDays(days);
+        });
         // fetch to the backend to /api/days with that authtoken
         // .then(res=>res.json()).then(days=>{this.context.setDays(days)); this.props.history.push("/user")});
         this.props.history.push("/dashboard");

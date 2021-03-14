@@ -10,16 +10,20 @@ class Register extends Component {
     e.preventDefault();
     const { username, password, confirmPassword } = e.target;
     this.setState({ error: null });
-    AuthAPIService.postUser({
-      username: username.value,
-      password: password.value,
-    })
-      .then((user) => {
-        this.props.history.push("/login");
+    if (password.value === confirmPassword.value) {
+      AuthAPIService.postUser({
+        username: username.value,
+        password: password.value,
       })
-      .catch((res) => {
-        this.setState({ error: res.error });
-      });
+        .then((user) => {
+          this.props.history.push("/login");
+        })
+        .catch((res) => {
+          this.setState({ error: res.error });
+        });
+    } else {
+      alert("Passwords do not match");
+    }
   };
 
   render() {

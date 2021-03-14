@@ -4,7 +4,6 @@ import { Route } from "react-router-dom";
 import Landing from "./components/Landing/Landing";
 import Register from "./components/RegisterForm/RegisterForm";
 import Login from "./components/Login/Login";
-import About from "./components/About/About";
 import Dashboard from "./components/Dashboard/Dashboard";
 import NewDay from "./components/NewDay/NewDay";
 import Context from "../src/Context";
@@ -13,6 +12,7 @@ import "./App.css";
 class App extends Component {
   state = {
     days: [],
+    setDays: (days) => this.setState({ days }),
     addNewDay: (day) => this.setState({ days: [...this.state.days, day] }),
   };
 
