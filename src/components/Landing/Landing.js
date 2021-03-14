@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Landing extends Component {
   render() {
@@ -61,7 +62,7 @@ class Landing extends Component {
           </p>
         </section>
         <section>
-          <button>Register Now</button>
+          <Link to="/register">Register Today</Link>
         </section>
       </div>
     );

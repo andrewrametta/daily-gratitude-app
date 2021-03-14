@@ -13,7 +13,6 @@ class NewDay extends Component {
       text3: text3.value,
     })
       .then((day) => {
-        console.log(day);
         this.context.addNewDay(day);
         this.props.history.push("/dashboard");
       })
