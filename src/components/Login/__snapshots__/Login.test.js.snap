@@ -16,7 +16,7 @@ exports[`Login component renders the complete page 1`] = `
         <label
           htmlFor="username"
         >
-          Username
+          Username 
         </label>
         <input
           defaultValue="Username"
@@ -29,7 +29,7 @@ exports[`Login component renders the complete page 1`] = `
         <label
           htmlFor="password"
         >
-          Password
+          Password 
         </label>
         <input
           defaultValue="P@ssword1234"

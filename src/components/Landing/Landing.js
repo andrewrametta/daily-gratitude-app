@@ -62,6 +62,19 @@ class Landing extends Component {
           </p>
         </section>
         <section>
+          <header>
+            <h3>Want to test out Daily Gratitude?</h3>
+          </header>
+          <p>
+            We have set up a demo account so that you can test the app out and
+            see if you want to register. All you have to do is click the Demo
+            link below and you will land on the login page. The username and
+            password will be auto filled for you, just click login and enjoy the
+            app. Feel free to leave an entry if you would like. Enjoy!
+          </p>
+          <Link to="/login">Demo</Link>
+        </section>
+        <section>
           <Link to="/register">Register Today</Link>
         </section>
       </div>

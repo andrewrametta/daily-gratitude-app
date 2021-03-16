@@ -37,16 +37,16 @@ class LoginForm extends Component {
           <form className="Login-form" onSubmit={this.handleLogin}>
             {this.state.error && <p className="error">{this.state.error}</p>}
             <div>
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">Username </label>
               <input
                 type="text"
                 name="username"
                 id="username"
-                defaultValue="Username"
+                defaultValue="DemoUser"
               />
             </div>
             <div>
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Password </label>
               <input
                 type="password"
                 name="password"
