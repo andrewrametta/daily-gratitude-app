@@ -19,7 +19,7 @@ exports[`Login component renders the complete page 1`] = `
           Username 
         </label>
         <input
-          defaultValue="Username"
+          defaultValue="DemoUser"
           id="username"
           name="username"
           type="text"
