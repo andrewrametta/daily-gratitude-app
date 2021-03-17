@@ -30,7 +30,7 @@ class Dashboard extends Component {
                 <h5>Your lastest gratitude entry</h5>
                 {days.map((day, indx) => (
                   <li key={indx}>
-                    <h6>{day.date_created}</h6>
+                    <h6>{new Date(day.date_created).toLocaleDateString()}</h6>
                     <p>{day.text1}</p>
                     <p>{day.text2}</p>
                     <p>{day.text3}</p>
