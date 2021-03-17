@@ -3,7 +3,6 @@ import TokenService from "./token-service";
 
 export default {
   postUser(user) {
-    console.log("before api call");
     return fetch(`${config.API_ENDPOINT}/api/users`, {
       method: "POST",
       headers: {
