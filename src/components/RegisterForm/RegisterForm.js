@@ -45,16 +45,16 @@ class Register extends Component {
             </div>
             <div>
               <label htmlFor="confirm-password">Confirm Password </label>
-              <p>
-                Password must be atleast 8 characters and include a number, a
-                capitol letter, and a special character
-              </p>
               <input
                 type="password"
                 name="confirmPassword"
                 id="confirm-password"
               />
             </div>
+            <p>
+              Password must be atleast 8 characters and include a number, a
+              capitol letter, and a special character
+            </p>
             <button type="submit">Register</button>
           </form>
         </section>

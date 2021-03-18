@@ -42,15 +42,15 @@ exports[`RegisterForm component renders the complete page 1`] = `
         >
           Confirm Password 
         </label>
-        <p>
-          Password must be atleast 8 characters and include a number, a capitol letter, and a special character
-        </p>
         <input
           id="confirm-password"
           name="confirmPassword"
           type="password"
         />
       </div>
+      <p>
+        Password must be atleast 8 characters and include a number, a capitol letter, and a special character
+      </p>
       <button
         type="submit"
       >
