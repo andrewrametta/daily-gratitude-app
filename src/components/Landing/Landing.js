@@ -10,20 +10,14 @@ class Landing extends Component {
             <h3>One Simple App could change your whole outlook on life</h3>
           </header>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum
-            elit vitae pulvinar ultrices. Nulla ullamcorper velit eget ex semper
-            fermentum. Sed mattis dolor nec massa congue, at tristique nisl
-            gravida. Duis elementum porttitor risus id varius. Class aptent
-            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur congue eget neque id ornare. Praesent elit
-            augue, lacinia eget ante bibendum, euismod lacinia tortor. Sed sit
-            amet blandit est. Maecenas non condimentum odio, vel vulputate nunc.
-            Phasellus dapibus ultrices sapien a condimentum. Donec eu tellus ac
-            mi molestie commodo ut a sem. Phasellus elementum quis odio et
-            lacinia. Proin varius massa ac eros gravida malesuada. Maecenas eget
-            ex et eros laoreet ornare id et nulla. Ut quis tortor sed justo
-            pellentesque hendrerit in in sem. Aenean euismod quis neque in
-            sodales.
+            Harvard Researcher Shawn Achor says, "Something as simple as writing
+            down three things your are grateful for every day for 21 days in a
+            row significantly increases your level of optimism, and it holds for
+            the next six months." We are in some of the most difficult times in
+            modern history. We are living in a pandemic. Our country is more
+            divided than it has ever been in recent years. People are suffering
+            from anxiety and depression at higher levels than ever documented
+            before.
           </p>
         </section>
         <section>
@@ -31,34 +25,11 @@ class Landing extends Component {
             <h3>How does Daily Gratitude work?</h3>
           </header>
           <p>
-            Vestibulum fermentum sagittis nunc, in consectetur arcu varius sed.
-            Nulla fermentum sapien tristique, consequat velit id, scelerisque
-            turpis. Pellentesque hendrerit porttitor dignissim. Integer vitae
-            metus accumsan, auctor velit in, finibus tellus. Sed mollis ex ex,
-            sed elementum dui finibus nec. Fusce dapibus eget ante ac posuere.
-            Nam in condimentum nunc. Pellentesque quis lacinia sapien, vel
-            cursus dui. Aliquam bibendum nisi mauris, egestas hendrerit arcu
-            elementum sed. Sed a nunc quam. Morbi quis urna sit amet lacus
-            elementum volutpat. Nunc auctor, velit in efficitur sagittis, lacus
-            ante bibendum tortor, a ultricies tortor leo at turpis. Ut et tellus
-            sollicitudin nunc facilisis volutpat. Vestibulum ante ipsum primis
-            in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam
-            malesuada rhoncus consequat.
-          </p>
-        </section>
-        <section>
-          <header>
-            <h3>What are you waiting for?</h3>
-          </header>
-          <p>
-            Mauris suscipit vel velit a maximus. Proin quis volutpat nisi. Nam
-            congue, massa nec vehicula viverra, est magna rhoncus enim, ut
-            mattis eros ex consectetur risus. Phasellus ornare purus ac lacinia
-            tempus. Curabitur pulvinar mi in sapien egestas, sit amet facilisis
-            elit semper. Donec aliquet nisi dui, sit amet tempus ligula pretium
-            sed. In id ligula eu purus commodo iaculis blandit eu elit. Fusce
-            eleifend purus id metus congue hendrerit. Cras eget dolor id sapien
-            interdum vestibulum. Maecenas tristique convallis dui.
+            This app is simple and yet could change someone's life. Daily
+            Gratitude is a place to practice gratitude. A user can sign up and
+            create a profile and then start a gratitude journal. Each day the
+            user can create a new journal entry. When you sign in you can
+            reflect on your journal in the dashboard.
           </p>
         </section>
         <section>
