@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AuthApiService from "../../services/auth-api-service";
 import Context from "../../Context";
+import "./NewDay.css";
 
 class NewDay extends Component {
   static contextType = Context;
@@ -24,13 +25,16 @@ class NewDay extends Component {
   render() {
     const { days = [] } = this.context;
     return (
-      <div>
-        <header>
-          {days.length === 0 ? <h4>Day 1</h4> : <h4>Day {days.length + 1}</h4>}
-          <h5>Write 3 things you are grateful for in the text boxes below</h5>
-        </header>
-        <section>
-          <form id="new-day" onSubmit={this.handleSubmit}>
+      <>
+        {days.length === 0 ? <h4>Day 1</h4> : <h4>Day {days.length + 1}</h4>}
+        <h5>Write 3 things you are grateful for in the text boxes below</h5>
+
+        <div className="new-day">
+          <form
+            className="new-day-form"
+            id="new-day"
+            onSubmit={this.handleSubmit}
+          >
             <section className="form-section overview-section">
               <label htmlFor="text1"></label>
               <textarea name="text1" rows="4" required></textarea>
@@ -45,8 +49,8 @@ class NewDay extends Component {
               <button type="submit">Submit</button>
             </section>
           </form>
-        </section>
-      </div>
+        </div>
+      </>
     );
   }
 }

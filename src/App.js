@@ -18,9 +18,11 @@ class App extends Component {
 
   render() {
     return (
-      <Context.Provider value={this.state}>
-        <div>
-          <Route path="/" component={Navbar} />
+      <div className="container">
+        <Context.Provider value={this.state}>
+          <header>
+            <Route path="/" component={Navbar} />
+          </header>
           <main>
             <Route exact path="/" component={Landing} />
             <Route path="/register" component={Register} />
@@ -28,8 +30,10 @@ class App extends Component {
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/new-day" component={NewDay} />
           </main>
-        </div>
-      </Context.Provider>
+
+          <footer>@Andrew Rametta</footer>
+        </Context.Provider>
+      </div>
     );
   }
 }

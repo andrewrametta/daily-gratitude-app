@@ -1,22 +1,23 @@
 import React, { Component } from "react";
 import Context from "../../Context";
 import { Link } from "react-router-dom";
+import "./Dashboard.css";
 
 class Dashboard extends Component {
   static contextType = Context;
 
   render() {
     const { days = [] } = this.context;
+
     return (
-      <div>
-        <header>
-          {days.length === 0 ? <h3>Welcome</h3> : <h3>Welcome Back!</h3>}
-        </header>
+      <>
+        {days.length === 0 ? <h3>Welcome</h3> : <h3>Welcome Back!</h3>}
+
         <section>
           {days.length === 0 ? (
-            <h5>Start your Gratitude Journal Today!</h5>
+            <h5 className="start">Start your gratitude journal today!</h5>
           ) : (
-            <h4>You have {days.length} days of gratitude</h4>
+            <h5 className="length">You have {days.length} gratitude entries</h5>
           )}
         </section>
         <section>
@@ -26,22 +27,25 @@ class Dashboard extends Component {
             </>
           ) : (
             <>
-              <ul>
-                <h5>Your lastest gratitude entry</h5>
-                {days.map((day, indx) => (
-                  <li key={indx}>
-                    <h6>{new Date(day.date_created).toLocaleDateString()}</h6>
-                    <p>{day.text1}</p>
-                    <p>{day.text2}</p>
-                    <p>{day.text3}</p>
-                  </li>
+              <ul className="ul-days">
+                {days.reverse().map((day, indx) => (
+                  <>
+                    <h6 className="date">
+                      {new Date(day.date_created).toLocaleDateString()}
+                    </h6>
+                    <li key={indx} className="li-days">
+                      <p>1. {day.text1}</p>
+                      <p>2. {day.text2}</p>
+                      <p>3. {day.text3}</p>
+                    </li>
+                  </>
                 ))}
               </ul>
-              <Link to="/new-day">New Day</Link>
+              <Link to="/new-day">Add a New Entry</Link>
             </>
           )}
         </section>
-      </div>
+      </>
     );
   }
 }

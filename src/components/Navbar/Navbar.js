@@ -14,52 +14,37 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="NavbarItems">
-        <h1 className="navbar-logo">
-          <Link to="/">Daily Gratitude</Link>
-        </h1>
-        <div className="meun-icon"></div>
-        <ul>
-          {/*MenuItems.map((item, indx) => {
-            return (
-              <li key={indx}>
-                <NavLink className="navLinks" to={item.url}>
-                  {item.title}
-                </NavLink>
-              </li>
-            );
-            //add about here, currently this is set up to show all routes
-            //change this to show about always, and everything else should be good
-            // may decide to get rid of about and just have landing and about be one page that has a link of Daily Gratitude
-          })*/}
-
+      <nav className="navbar">
+        <Link className="logo" to="/">
+          <img className="logo-image" src="/logo.svg" alt="Daily Gratitude" />
+        </Link>
+        <ul className="hamburger">
+          <li className="line"></li>
+          <li className="line"></li>
+          <li className="line"></li>
+        </ul>
+        <ul className="nav">
           {TokenService.hasAuthToken() ? (
             <>
-              <li>
+              <li className="nav-item">
                 <Link to="/dashboard">Dashboard</Link>
               </li>
-              <li>
-                <NavLink className="navLinks" to="/new-day">
-                  New Day
-                </NavLink>
+              <li className="nav-item">
+                <NavLink to="/new-day">Add New Entry</NavLink>
               </li>
-              <li>
-                <NavLink className="navLinks" to="/" onClick={this.logout}>
+              <li className="nav-item">
+                <NavLink to="/" onClick={this.logout}>
                   Logout
                 </NavLink>
               </li>
             </>
           ) : (
             <>
-              <li>
-                <NavLink className="navLinks" to="/register">
-                  Register
-                </NavLink>
+              <li className="nav-item">
+                <NavLink to="/register">Register</NavLink>
               </li>
-              <li>
-                <NavLink className="navLinks" to="/login">
-                  Login
-                </NavLink>
+              <li className="nav-item">
+                <NavLink to="/login">Login</NavLink>
               </li>
             </>
           )}

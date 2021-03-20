@@ -3,20 +3,20 @@
 exports[`Login component renders the complete page 1`] = `
 <div>
   <section>
-    <header>
-      <h3>
-        Login
-      </h3>
-    </header>
+    <h3>
+      Login
+    </h3>
     <form
       className="Login-form"
       onSubmit={[Function]}
     >
       <div>
         <label
+          className="label"
           htmlFor="username"
         >
-          Username 
+          Username
+           
         </label>
         <input
           defaultValue="DemoUser"
@@ -27,9 +27,11 @@ exports[`Login component renders the complete page 1`] = `
       </div>
       <div>
         <label
+          className="label"
           htmlFor="password"
         >
-          Password 
+          Password
+           
         </label>
         <input
           defaultValue="P@ssword1234"

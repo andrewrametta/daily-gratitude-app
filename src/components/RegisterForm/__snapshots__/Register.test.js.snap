@@ -3,11 +3,9 @@
 exports[`RegisterForm component renders the complete page 1`] = `
 <div>
   <section>
-    <header>
-      <h3>
-        Register Now
-      </h3>
-    </header>
+    <h3>
+      Register Now
+    </h3>
     <form
       className="register-form"
       onSubmit={[Function]}
@@ -48,7 +46,9 @@ exports[`RegisterForm component renders the complete page 1`] = `
           type="password"
         />
       </div>
-      <p>
+      <p
+        className="password-directions"
+      >
         Password must be atleast 8 characters and include a number, a capitol letter, and a special character
       </p>
       <button

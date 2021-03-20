@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AuthAPIService from "../../services/auth-api-service";
+import "./RegisterForm.css";
 
 class Register extends Component {
   state = {
@@ -30,9 +31,8 @@ class Register extends Component {
     return (
       <div>
         <section>
-          <header>
-            <h3>Register Now</h3>
-          </header>
+          <h3>Register Now</h3>
+
           <form className="register-form" onSubmit={this.handleSubmit}>
             {this.state.error && <p className="error">{this.state.error}</p>}
             <div>
@@ -51,7 +51,7 @@ class Register extends Component {
                 id="confirm-password"
               />
             </div>
-            <p>
+            <p className="password-directions">
               Password must be atleast 8 characters and include a number, a
               capitol letter, and a special character
             </p>

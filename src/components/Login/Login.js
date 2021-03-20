@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TokenService from "../../services/token-service";
 import AuthAPIService from "../../services/auth-api-service";
 import Context from "../../Context";
+import "./Login.css";
 
 class LoginForm extends Component {
   state = {
@@ -31,13 +32,14 @@ class LoginForm extends Component {
     return (
       <div>
         <section>
-          <header>
-            <h3>Login</h3>
-          </header>
+          <h3>Login</h3>
+
           <form className="Login-form" onSubmit={this.handleLogin}>
             {this.state.error && <p className="error">{this.state.error}</p>}
             <div>
-              <label htmlFor="username">Username </label>
+              <label className="label" htmlFor="username">
+                Username{" "}
+              </label>
               <input
                 type="text"
                 name="username"
@@ -46,7 +48,9 @@ class LoginForm extends Component {
               />
             </div>
             <div>
-              <label htmlFor="password">Password </label>
+              <label className="label" htmlFor="password">
+                Password{" "}
+              </label>
               <input
                 type="password"
                 name="password"
@@ -54,7 +58,9 @@ class LoginForm extends Component {
                 defaultValue="P@ssword1234"
               />
             </div>
-            <button type="submit">Login</button>
+            <button className="button-login" type="submit">
+              Login
+            </button>
           </form>
         </section>
       </div>

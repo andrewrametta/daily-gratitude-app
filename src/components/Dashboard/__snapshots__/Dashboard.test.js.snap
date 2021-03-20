@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Dashboard component renders the complete page 1`] = `
-<div>
-  <header>
-    <h3>
-      Welcome
-    </h3>
-  </header>
+<Fragment>
+  <h3>
+    Welcome
+  </h3>
   <section>
-    <h5>
-      Start your Gratitude Journal Today!
+    <h5
+      className="start"
+    >
+      Start your gratitude journal today!
     </h5>
   </section>
   <section>
@@ -19,5 +19,5 @@ exports[`Dashboard component renders the complete page 1`] = `
       Add your first day!
     </Link>
   </section>
-</div>
+</Fragment>
 `;

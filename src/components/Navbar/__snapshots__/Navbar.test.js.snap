@@ -4,20 +4,25 @@ exports[`Navbar component renders the complete page 1`] = `
 <nav
   className="NavbarItems"
 >
-  <h1
-    className="navbar-logo"
-  >
-    <Link
-      to="/"
-    >
-      Daily Gratitude
-    </Link>
-  </h1>
   <div
     className="meun-icon"
   />
-  <ul>
-    <li>
+  <ul
+    className="ul-nav"
+  >
+    <li
+      className="li-nav-logo"
+    >
+      <Link
+        className="logo"
+        to="/"
+      >
+        Daily Gratitude
+      </Link>
+    </li>
+    <li
+      className="li-nav"
+    >
       <NavLink
         className="navLinks"
         to="/register"
@@ -25,7 +30,9 @@ exports[`Navbar component renders the complete page 1`] = `
         Register
       </NavLink>
     </li>
-    <li>
+    <li
+      className="li-nav"
+    >
       <NavLink
         className="navLinks"
         to="/login"

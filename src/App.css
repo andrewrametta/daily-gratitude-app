@@ -1,72 +1,122 @@
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  color: #444;
-  text-align: center;
-  line-height: 1.5;
-}
-
-nav,
-footer {
+  margin: 0;
+  list-style: none;
   padding: 0;
-  background-color: #aaa;
+  font-size: 14px;
+  font-family: "TruenoLight";
+}
+:root {
+  --teal: rgb(61, 196, 192);
+}
+body {
+  background-color: rgb(232, 230, 230);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.7rem 2rem;
-  z-index: 1;
-  width: 100%;
-  opacity: 0.9;
-  margin-bottom: 1rem;
-}
-
-ul {
-  margin-right: 10px;
-}
-
-li {
-  flex-direction: column;
-  margin: 10px;
-  list-style-type: none;
-  text-decoration: none;
+div .container {
+  position: relative;
+  min-height: 100vh;
 }
 
 header {
-  padding: 45px 15px;
-}
-
-section {
-  min-height: 200px;
-  padding: 30px 15px;
-  background-color: #bbb;
-}
-
-section:nth-child(even) {
-  background-color: #ddd;
-}
-
-p {
-  margin: 0 auto;
-  max-width: 650px;
-}
-
-p + p {
-  margin-top: 15px;
-}
-
-.session-description::before {
-  font-family: Georgia, serif;
-  position: absolute;
-  font-size: 6em;
-  line-height: 1;
+  position: sticky;
   top: 0;
+  border-bottom: 3px solid var(--teal);
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+}
+
+footer {
+  position: absolute;
   left: 0;
-  content: "here";
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  border-top: 3px solid var(--teal);
+}
+
+header,
+footer {
+  color: #122663;
+  box-shadow: 0px 3px 10px rgb(0 0 0 / 10%);
+  background-color: white;
+}
+
+h1 {
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+h2,
+h3 {
+  color: #3dc4c0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+}
+
+form {
+  margin: 20px;
+  border: 2px solid #3dc4c0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form p {
+  margin: 10px;
+}
+
+form input {
+  font-size: 20px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #3dc4c0;
+}
+
+form button {
+  background-color: #3dc4c0;
+  border: 0px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media all and (min-width: 600px) {
+  h2,
+  h3 {
+    color: #3dc4c0;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  p {
+    font-size: 10px;
+  }
+
+  form {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: inline-block;
+    vertical-align: top;
+    flex-direction: column;
+  }
 }

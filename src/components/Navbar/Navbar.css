@@ -1,3 +1,76 @@
-.active {
-  color: green;
+a {
+  color: #122663;
+  text-decoration: none;
+}
+a:hover {
+  color: #5dd7ad;
+}
+
+.logo-image {
+  max-width: 240px;
+}
+
+.hamburger {
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+}
+.logo {
+  flex: 1;
+  margin: 0;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+.nav-item {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .logo-image {
+    max-width: 180px;
+  }
+
+  .nav {
+    background-color: white;
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 20px;
+    display: none;
+    padding: 20px;
+  }
+  .hamburger {
+    display: flex;
+    height: 20px;
+    padding-right: 10px;
+  }
+  .hamburger:hover + .nav,
+  .nav:hover {
+    display: block;
+  }
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .nav-item:hover {
+    background-color: rgb(61, 196, 192);
+  }
 }
