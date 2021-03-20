@@ -15,10 +15,9 @@ class Landing extends Component {
           <section className="section-child">
             <h3 className="card">Change your outlook</h3>
             <p>
-              We are in some of the most difficult times in modern history. We
-              are living in a pandemic. Our country is more divided than it has
-              ever been in recent years. People are suffering from anxiety and
-              depression at higher levels than ever documented before.
+              We are in some of the most difficult times in modern history.
+              People are suffering from anxiety and depression at higher levels
+              than ever documented before.
             </p>
           </section>
           <section className="section-child">

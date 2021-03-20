@@ -41,6 +41,7 @@ exports[`Login component renders the complete page 1`] = `
         />
       </div>
       <button
+        className="button-login"
         type="submit"
       >
         Login

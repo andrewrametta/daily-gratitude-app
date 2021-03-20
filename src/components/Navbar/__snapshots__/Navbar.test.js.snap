@@ -2,39 +2,47 @@
 
 exports[`Navbar component renders the complete page 1`] = `
 <nav
-  className="NavbarItems"
+  className="navbar"
 >
-  <div
-    className="meun-icon"
-  />
+  <Link
+    className="logo"
+    to="/"
+  >
+    <img
+      alt="Daily Gratitude"
+      className="logo-image"
+      src="/logo.svg"
+    />
+  </Link>
   <ul
-    className="ul-nav"
+    className="hamburger"
   >
     <li
-      className="li-nav-logo"
-    >
-      <Link
-        className="logo"
-        to="/"
-      >
-        Daily Gratitude
-      </Link>
-    </li>
+      className="line"
+    />
     <li
-      className="li-nav"
+      className="line"
+    />
+    <li
+      className="line"
+    />
+  </ul>
+  <ul
+    className="nav"
+  >
+    <li
+      className="nav-item"
     >
       <NavLink
-        className="navLinks"
         to="/register"
       >
         Register
       </NavLink>
     </li>
     <li
-      className="li-nav"
+      className="nav-item"
     >
       <NavLink
-        className="navLinks"
         to="/login"
       >
         Login

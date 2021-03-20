@@ -16,10 +16,10 @@ exports[`Landing component renders the complete page 1`] = `
       <h3
         className="card"
       >
-        One simple app could change your outlook on life
+        Change your outlook
       </h3>
       <p>
-        We are in some of the most difficult times in modern history. We are living in a pandemic. Our country is more divided than it has ever been in recent years. People are suffering from anxiety and depression at higher levels than ever documented before.
+        We are in some of the most difficult times in modern history. People are suffering from anxiety and depression at higher levels than ever documented before.
       </p>
     </section>
     <section
@@ -31,7 +31,7 @@ exports[`Landing component renders the complete page 1`] = `
         How does it work?
       </h3>
       <p>
-        This app is simple and yet could change someone's life. Daily Gratitude is a place to practice gratitude. A user can sign up and create a profile and then start a gratitude journal. Each day the user can create a new journal entry. When you sign in you can reflect on your journal in the dashboard.
+        You can sign up and create a profile and then start a your own gratitude journal. Each day you can create a new entry. There is also a dashboard page to view your entire journal.
       </p>
     </section>
     <section
@@ -43,31 +43,31 @@ exports[`Landing component renders the complete page 1`] = `
         Want to test it out?
       </h3>
       <p>
-        We have set up a demo account so that you can test the app out and see if you want to register. All you have to do is click the Demo link below and you will land on the login page. The username and password will be auto filled for you, just click login and enjoy the app. Feel free to leave an entry if you would like. Enjoy!
+        We have set up a demo account so that you can test the app. Click the Demo link below and you will land on the login page. The username and password will be auto filled for you, just click login and enjoy!
       </p>
     </section>
-    <div
-      className="button-container"
+  </div>
+  <div
+    className="button-container"
+  >
+    <Link
+      to="/login"
     >
-      <Link
-        to="/login"
+      <button
+        className="button-demo"
       >
-        <button
-          className="button-demo"
-        >
-          Demo
-        </button>
-      </Link>
-      <Link
-        to="/register"
+        Demo
+      </button>
+    </Link>
+    <Link
+      to="/register"
+    >
+      <button
+        className="button-register"
       >
-        <button
-          className="button-register"
-        >
-          Register
-        </button>
-      </Link>
-    </div>
+        Register
+      </button>
+    </Link>
   </div>
 </Fragment>
 `;

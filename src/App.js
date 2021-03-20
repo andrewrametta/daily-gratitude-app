@@ -31,7 +31,7 @@ class App extends Component {
             <Route path="/new-day" component={NewDay} />
           </main>
 
-          <footer>@Andrew Rametta</footer>
+          <footer>Built by Andrew Rametta</footer>
         </Context.Provider>
       </div>
     );
