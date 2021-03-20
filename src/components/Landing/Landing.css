@@ -16,13 +16,15 @@
 .landing-item {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   flex: 1;
 }
 
 img .landing-img {
+  flex: 1;
   max-width: 200px;
   max-height: 200px;
+  margin: auto;
 }
 
 section .landing-section {
@@ -79,9 +81,7 @@ p {
 @media all and (min-width: 700px) {
   .landing-container {
     flex-direction: row;
-  }
-  section .landing-section {
-    flex: 1;
+    align-items: stretch;
   }
 
   .landing-img-container {
@@ -90,7 +90,7 @@ p {
   }
 
   img .landing-img {
-    width: 200px;
-    height: 200px;
+    max-width: 300px;
+    max-height: 300px;
   }
 }

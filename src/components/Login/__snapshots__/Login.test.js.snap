@@ -2,7 +2,9 @@
 
 exports[`Login component renders the complete page 1`] = `
 <div>
-  <section>
+  <section
+    className="section-login"
+  >
     <h3>
       Login
     </h3>
