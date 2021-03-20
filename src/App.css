@@ -3,7 +3,7 @@
   margin: 0;
   list-style: none;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "TruenoLight", Arial, Helvetica, sans-serif;
 }
 :root {
@@ -64,8 +64,7 @@ h3 {
 }
 
 img {
-  width: 100%;
-  max-width: 800px;
+  max-width: 300px;
   margin: 20px 0;
 }
 

@@ -1,26 +1,38 @@
 .quote {
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 30px;
   color: rgb(84, 84, 84);
 }
 
-h3 .card {
-  color: black;
-}
-
 .landing-container {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
-  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.landing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img .landing-img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+section .landing-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .section-child {
   flex: 1;
-  justify-content: space-around;
-  font-size: 14px;
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 15px;
@@ -35,6 +47,7 @@ h3 .card {
   flex-direction: column;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .button-register {
@@ -65,7 +78,17 @@ p {
   .landing-container {
     flex-direction: row;
   }
-  .section-child {
-    max-height: 200px;
+  section .landing-section {
+    flex: 1;
+  }
+
+  .landing-img-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  img .landing-img {
+    width: 200px;
+    height: 200px;
   }
 }
