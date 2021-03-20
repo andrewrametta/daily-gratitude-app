@@ -55,8 +55,8 @@ class Landing extends Component {
               <p>
                 We have set up a demo account so that you can test the app.
                 Click the Demo link below and you will land on the login page.
-                The username and password will be auto filled for you, just
-                click login and enjoy!
+                Everything will be auto filled for you, just click login and
+                enjoy!
               </p>
             </section>
           </div>

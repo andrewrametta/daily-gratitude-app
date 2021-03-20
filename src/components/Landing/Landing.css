@@ -9,14 +9,15 @@
 .landing-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  align-items: stretch;
+  justify-content: space-evenly;
 }
 
 .landing-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  flex: 1;
 }
 
 img .landing-img {
@@ -25,6 +26,7 @@ img .landing-img {
 }
 
 section .landing-section {
+  flex: 1;
   display: flex;
   flex-direction: column;
   max-width: 200px;

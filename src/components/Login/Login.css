@@ -4,3 +4,9 @@ form input {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+@media all and (min-width: 700px) {
+  .section-login {
+    text-align: center;
+  }
+}
