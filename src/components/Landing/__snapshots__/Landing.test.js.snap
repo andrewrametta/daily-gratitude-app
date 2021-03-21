@@ -5,7 +5,7 @@ exports[`Landing component renders the complete page 1`] = `
   <p
     className="quote"
   >
-    "Something as simple as writing down three things your are grateful for every day for 21 days in a row significantly increases your level of optimism, and it holds for the next six months." -- Shawn Achor
+    "Something as simple as writing down three things you are grateful for every day for 21 days in a row significantly increases your level of optimism, and it holds for the next six months." -- Shawn Achor
   </p>
   <div
     className="landing-container"
@@ -48,7 +48,7 @@ exports[`Landing component renders the complete page 1`] = `
           How does it work?
         </h3>
         <p>
-          You can sign up and create a profile and then start a your own gratitude journal. Each day you can create a new entry. There is also a dashboard page to view your entire journal.
+          You can sign up and create a profile and then start your own gratitude journal. Each day you can create a new entry. There is also a dashboard page to view your entire journal.
         </p>
       </section>
     </div>
