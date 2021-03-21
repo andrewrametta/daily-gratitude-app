@@ -52,8 +52,8 @@ class Register extends Component {
               />
             </div>
             <p className="password-directions">
-              Password must be atleast 8 characters and include a number, a
-              capitol letter, and a special character
+              Password must be at least 8 characters and include a number, a
+              capital letter, and a special character
             </p>
             <button type="submit">Register</button>
           </form>

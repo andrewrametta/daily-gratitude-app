@@ -33,6 +33,7 @@ section .landing-section {
   flex-direction: column;
   max-width: 200px;
   max-height: 200px;
+  margin-bottom: 30px;
 }
 
 .section-child {

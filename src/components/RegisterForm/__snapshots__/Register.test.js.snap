@@ -49,7 +49,7 @@ exports[`RegisterForm component renders the complete page 1`] = `
       <p
         className="password-directions"
       >
-        Password must be atleast 8 characters and include a number, a capitol letter, and a special character
+        Password must be at least 8 characters and include a number, a capital letter, and a special character
       </p>
       <button
         type="submit"
