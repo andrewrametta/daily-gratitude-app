@@ -15,9 +15,12 @@ class LoginForm extends Component {
     const { username, password } = e.target;
     const user = { username: username.value, password: password.value };
     this.setState({ error: null });
+    // find user in database
     AuthAPIService.loginUser(user)
       .then((loginResponse) => {
+        // store auth token in local storage
         TokenService.saveAuthToken(loginResponse.authToken);
+        // get all days and put them into context using auth token
         AuthAPIService.getDay().then((days) => {
           this.context.setDays(days);
         });

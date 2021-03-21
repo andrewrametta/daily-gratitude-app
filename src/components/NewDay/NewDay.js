@@ -8,6 +8,7 @@ class NewDay extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { text1, text2, text3 } = e.target;
+    //create entry using auth token as validation
     AuthApiService.postDay({
       text1: text1.value,
       text2: text2.value,

@@ -12,6 +12,7 @@ class Register extends Component {
     const { username, password, confirmPassword } = e.target;
     this.setState({ error: null });
     if (password.value === confirmPassword.value) {
+      // create user
       AuthAPIService.postUser({
         username: username.value,
         password: password.value,

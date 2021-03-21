@@ -7,6 +7,7 @@ class Dashboard extends Component {
   static contextType = Context;
 
   render() {
+    // access all days that have been recieved from api and stored into context
     const { days = [] } = this.context;
 
     return (
