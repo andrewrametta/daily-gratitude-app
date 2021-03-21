@@ -19,6 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        {/* connect state to context using value */}
         <Context.Provider value={this.state}>
           <header>
             <Route path="/" component={Navbar} />
