@@ -20,10 +20,16 @@ class Dashboard extends Component {
             <h5 className="length">You have {days.length} gratitude entries</h5>
           )}
         </section>
-        <section>
+        <section className="section-dashboard">
           {days.length === 0 ? (
             <>
-              <Link to="/new-day">Add your first day!</Link>
+              <div className="button-container-add-new">
+                <Link to="/new-day">
+                  <button className="button-add-new-entry">
+                    Add Your First Entry
+                  </button>
+                </Link>
+              </div>
             </>
           ) : (
             <>
@@ -41,7 +47,13 @@ class Dashboard extends Component {
                   </>
                 ))}
               </ul>
-              <Link to="/new-day">Add a New Entry</Link>
+              <div className="button-container-add-new">
+                <Link to="/new-day">
+                  <button className="button-add-new-entry">
+                    Add New Entry
+                  </button>
+                </Link>
+              </div>
             </>
           )}
         </section>

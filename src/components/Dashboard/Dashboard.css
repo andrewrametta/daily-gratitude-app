@@ -49,4 +49,10 @@ p {
     margin-right: 25%;
     margin-left: 25%;
   }
+
+  div .button-container-add-new {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
 }

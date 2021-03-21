@@ -12,12 +12,22 @@ exports[`Dashboard component renders the complete page 1`] = `
       Start your gratitude journal today!
     </h5>
   </section>
-  <section>
-    <Link
-      to="/new-day"
+  <section
+    className="section-dashboard"
+  >
+    <div
+      className="button-container-add-new"
     >
-      Add your first day!
-    </Link>
+      <Link
+        to="/new-day"
+      >
+        <button
+          className="button-add-new-entry"
+        >
+          Add Your First Entry
+        </button>
+      </Link>
+    </div>
   </section>
 </Fragment>
 `;
