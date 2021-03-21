@@ -7,9 +7,9 @@ class Landing extends Component {
     return (
       <>
         <p className="quote">
-          "Something as simple as writing down three things your are grateful
-          for every day for 21 days in a row significantly increases your level
-          of optimism, and it holds for the next six months." -- Shawn Achor
+          "Something as simple as writing down three things you are grateful for
+          every day for 21 days in a row significantly increases your level of
+          optimism, and it holds for the next six months." -- Shawn Achor
         </p>
         <div className="landing-container">
           <div className="landing-item">
@@ -37,7 +37,7 @@ class Landing extends Component {
               <h3 className="card">How does it work?</h3>
 
               <p>
-                You can sign up and create a profile and then start a your own
+                You can sign up and create a profile and then start your own
                 gratitude journal. Each day you can create a new entry. There is
                 also a dashboard page to view your entire journal.
               </p>
