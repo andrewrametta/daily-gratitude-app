@@ -60,7 +60,7 @@ section .landing-section {
   padding: 5px;
   border-radius: 15px;
   border: none;
-  background-color: #177876;
+  background-color: #0a5755;
   color: white;
 }
 .button-demo {
@@ -71,12 +71,8 @@ section .landing-section {
   padding-right: 10px;
   border-radius: 15px;
   border: none;
-  background-color: #177876;
+  background-color: #0a5755;
   color: white;
-}
-
-p {
-  color: rgb#454545;
 }
 
 @media all and (min-width: 900px) {

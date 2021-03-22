@@ -5,29 +5,23 @@ exports[`Dashboard component renders the complete page 1`] = `
   <h1>
     Welcome
   </h1>
-  <section>
-    <h5
-      className="start"
-    >
-      Start your gratitude journal today!
-    </h5>
-  </section>
-  <section
-    className="section-dashboard"
+  <h5
+    className="start"
   >
-    <div
-      className="button-container-add-new"
+    Start your gratitude journal today!
+  </h5>
+  <div
+    className="button-container-add-new"
+  >
+    <Link
+      to="/new-day"
     >
-      <Link
-        to="/new-day"
+      <button
+        className="button-add-new-entry"
       >
-        <button
-          className="button-add-new-entry"
-        >
-          Add Your First Entry
-        </button>
-      </Link>
-    </div>
-  </section>
+        Add Your First Entry
+      </button>
+    </Link>
+  </div>
 </Fragment>
 `;
