@@ -47,16 +47,14 @@ class Dashboard extends Component {
               {days
                 .sort((a, b) => b.id - a.id)
                 .map((day, indx) => (
-                  <div key={indx} className="day-entry-container">
-                    <h6 className="date">
+                  <li key={indx} className="li-days">
+                    <h4 className="date">
                       {new Date(day.date_created).toLocaleDateString()}
-                    </h6>
-                    <li className="li-days">
-                      <p>1. {day.text1}</p>
-                      <p>2. {day.text2}</p>
-                      <p>3. {day.text3}</p>
-                    </li>
-                  </div>
+                    </h4>
+                    <p>1. {day.text1}</p>
+                    <p>2. {day.text2}</p>
+                    <p>3. {day.text3}</p>
+                  </li>
                 ))}
             </ul>
             <div className="button-container-add-new">
