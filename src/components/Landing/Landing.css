@@ -3,7 +3,7 @@
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 30px;
-  color: rgb(84, 84, 84);
+  color: #454545;
 }
 
 .landing-container {
@@ -60,7 +60,7 @@ section .landing-section {
   padding: 5px;
   border-radius: 15px;
   border: none;
-  background-color: #3dc4c0;
+  background-color: #177876;
   color: white;
 }
 .button-demo {
@@ -71,12 +71,12 @@ section .landing-section {
   padding-right: 10px;
   border-radius: 15px;
   border: none;
-  background-color: #3dc4c0;
+  background-color: #177876;
   color: white;
 }
 
 p {
-  color: rgb(138, 138, 138);
+  color: rgb#454545;
 }
 
 @media all and (min-width: 700px) {

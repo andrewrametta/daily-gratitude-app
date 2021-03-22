@@ -7,7 +7,7 @@
   font-family: "TruenoLight", Arial, Helvetica, sans-serif;
 }
 :root {
-  --teal: rgb(61, 196, 192);
+  --teal: #177876;
 }
 body {
   background-color: rgb(232, 230, 230);
@@ -59,7 +59,7 @@ h3 {
 
 h2,
 h3 {
-  color: #3dc4c0;
+  color: #177876;
   text-align: center;
 }
 
@@ -69,8 +69,10 @@ img {
 }
 
 form {
-  margin: 20px;
-  border: 2px solid #3dc4c0;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 60px;
+  border: 2px solid #177876;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -84,11 +86,12 @@ form input {
   font-size: 20px;
   padding: 10px 5px;
   border-radius: 5px;
-  border: 1px solid #3dc4c0;
+  border: 1px solid #177876;
+  max-width: 87%;
 }
 
 form button {
-  background-color: #3dc4c0;
+  background-color: #177876;
   border: 0px;
   padding: 5px 10px;
   color: white;
@@ -97,20 +100,24 @@ form button {
   display: block;
 }
 
+p {
+  color: #454545;
+}
+
 button {
   cursor: pointer;
   margin-bottom: 30px;
   padding: 5px;
   border-radius: 15px;
   border: none;
-  background-color: #3dc4c0;
+  background-color: #177876;
   color: white;
 }
 
 @media all and (min-width: 600px) {
   h2,
   h3 {
-    color: #3dc4c0;
+    color: #177876;
     font-size: 14px;
     margin-top: 5px;
   }
@@ -127,7 +134,7 @@ button {
   }
 
   main {
-    margin-left: 15%;
     margin-right: 15%;
+    margin-left: 15%;
   }
 }

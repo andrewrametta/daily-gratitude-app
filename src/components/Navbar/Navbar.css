@@ -3,7 +3,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #5dd7ad;
+  color: #177876;
 }
 
 .logo-image {
@@ -71,6 +71,6 @@ a:hover {
     padding: 20px 0;
   }
   .nav-item:hover {
-    background-color: rgb(61, 196, 192);
+    background-color: rgb(#177876);
   }
 }

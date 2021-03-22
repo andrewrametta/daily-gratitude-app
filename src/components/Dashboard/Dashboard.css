@@ -25,7 +25,7 @@ h5 {
 }
 
 h6 {
-  color: #3dc4c0;
+  color: #177876;
   margin-bottom: 15px;
 }
 
@@ -42,6 +42,14 @@ p {
 .length {
   text-align: center;
   color: rgb(84, 84, 84);
+}
+
+div .button-container-add-new {
+  text-align: center;
+}
+
+section .section-dashboard {
+  margin-bottom: 30px;
 }
 
 @media all and (min-width: 700px) {
