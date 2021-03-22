@@ -5,7 +5,7 @@ import "./Landing.css";
 class Landing extends Component {
   render() {
     return (
-      <>
+      <div className="landing-wrapper">
         <p className="quote">
           "Something as simple as writing down three things you are grateful for
           every day for 21 days in a row significantly increases your level of
@@ -70,7 +70,7 @@ class Landing extends Component {
             <button className="button-register">Register</button>
           </Link>
         </div>
-      </>
+      </div>
     );
   }
 }

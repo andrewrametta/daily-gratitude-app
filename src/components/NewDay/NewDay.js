@@ -27,7 +27,7 @@ class NewDay extends Component {
     const { days = [] } = this.context;
     return (
       <>
-        {days.length === 0 ? <h4>Day 1</h4> : <h4>Day {days.length + 1}</h4>}
+        {days.length === 0 ? <h1>Day 1</h1> : <h1>Day {days.length + 1}</h1>}
         <h5>Write 3 things you are grateful for in the text boxes below</h5>
 
         <div className="new-day">

@@ -2,9 +2,9 @@
 
 exports[`Dashboard component renders the complete page 1`] = `
 <Fragment>
-  <h3>
+  <h1>
     Welcome
-  </h3>
+  </h1>
   <section>
     <h5
       className="start"

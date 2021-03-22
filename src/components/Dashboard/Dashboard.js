@@ -12,7 +12,7 @@ class Dashboard extends Component {
 
     return (
       <>
-        {days.length === 0 ? <h3>Welcome</h3> : <h3>Welcome Back!</h3>}
+        {days.length === 0 ? <h1>Welcome</h1> : <h1>Your Gratitude Journal</h1>}
 
         <section>
           {days.length === 0 ? (

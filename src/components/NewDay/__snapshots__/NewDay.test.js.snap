@@ -2,9 +2,9 @@
 
 exports[`NewDay component renders the complete page 1`] = `
 <Fragment>
-  <h4>
+  <h1>
     Day 1
-  </h4>
+  </h1>
   <h5>
     Write 3 things you are grateful for in the text boxes below
   </h5>

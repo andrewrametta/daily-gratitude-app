@@ -3,7 +3,6 @@
   margin: 0;
   list-style: none;
   padding: 0;
-  font-size: 16px;
   font-family: "TruenoLight", Arial, Helvetica, sans-serif;
 }
 :root {
@@ -47,7 +46,7 @@ footer {
 }
 
 h1 {
-  color: white;
+  color: #177876;
 }
 
 h1,
@@ -55,6 +54,7 @@ h2,
 h3 {
   font-size: 20px;
   margin: 20px 0;
+  text-align: center;
 }
 
 h2,
@@ -87,7 +87,8 @@ form input {
   padding: 10px 5px;
   border-radius: 5px;
   border: 1px solid #177876;
-  max-width: 87%;
+  max-width: 80%;
+  margin-left: 5px;
 }
 
 form button {
@@ -129,7 +130,6 @@ button {
     margin-left: 25%;
     margin-right: 25%;
     display: inline-block;
-    vertical-align: top;
     flex-direction: column;
   }
 

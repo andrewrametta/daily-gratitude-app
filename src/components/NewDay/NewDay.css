@@ -22,6 +22,7 @@ form .new-day-form {
 textarea {
   margin: 10px 10px;
   padding: 10px;
+  max-width: 87%;
 }
 
 form textarea {

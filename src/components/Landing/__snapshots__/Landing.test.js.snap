@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Landing component renders the complete page 1`] = `
-<Fragment>
+<div
+  className="landing-wrapper"
+>
   <p
     className="quote"
   >
@@ -96,5 +98,5 @@ exports[`Landing component renders the complete page 1`] = `
       </button>
     </Link>
   </div>
-</Fragment>
+</div>
 `;

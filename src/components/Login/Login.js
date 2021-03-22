@@ -35,7 +35,7 @@ class LoginForm extends Component {
     return (
       <div>
         <section className="section-login">
-          <h3>Login</h3>
+          <h1>Login</h1>
 
           <form className="Login-form" onSubmit={this.handleLogin}>
             {this.state.error && <p className="error">{this.state.error}</p>}
