@@ -35,18 +35,20 @@ class Dashboard extends Component {
           ) : (
             <>
               <ul className="ul-days">
-                {days.reverse().map((day, indx) => (
-                  <>
-                    <h6 className="date">
-                      {new Date(day.date_created).toLocaleDateString()}
-                    </h6>
-                    <li key={indx} className="li-days">
-                      <p>1. {day.text1}</p>
-                      <p>2. {day.text2}</p>
-                      <p>3. {day.text3}</p>
-                    </li>
-                  </>
-                ))}
+                {days
+                  .sort((a, b) => b.id - a.id)
+                  .map((day, indx) => (
+                    <>
+                      <h6 className="date">
+                        {new Date(day.date_created).toLocaleDateString()}
+                      </h6>
+                      <li key={indx} className="li-days">
+                        <p>1. {day.text1}</p>
+                        <p>2. {day.text2}</p>
+                        <p>3. {day.text3}</p>
+                      </li>
+                    </>
+                  ))}
               </ul>
               <div className="button-container-add-new">
                 <Link to="/new-day">
