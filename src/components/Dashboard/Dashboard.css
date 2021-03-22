@@ -46,6 +46,7 @@ p {
 
 div .button-container-add-new {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 section .section-dashboard {
@@ -61,6 +62,6 @@ section .section-dashboard {
   div .button-container-add-new {
     text-align: center;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
