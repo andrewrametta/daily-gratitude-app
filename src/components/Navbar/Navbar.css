@@ -41,7 +41,7 @@ a:hover {
   margin: 0 10px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .logo-image {
     max-width: 180px;
   }

@@ -79,7 +79,7 @@ p {
   color: rgb#454545;
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 600px) {
   div .landing-wrapper {
     margin: 30px 20px;
   }
