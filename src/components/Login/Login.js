@@ -20,10 +20,6 @@ class LoginForm extends Component {
       .then((loginResponse) => {
         // store auth token in local storage
         TokenService.saveAuthToken(loginResponse.authToken);
-        // get all days and put them into context using auth token
-        AuthAPIService.getDay().then((days) => {
-          this.context.setDays(days);
-        });
         this.props.history.push("/dashboard");
       })
       .catch((res) => {
